@@ -3,7 +3,7 @@ FROM openjdk:8-jre-alpine
 MAINTAINER Sean Nelson <audiohacked@gmail.com>
 
 ARG MODPACK="FTBAcademy"
-ARG FTB_VERSION="1_0_0"
+ARG FTB_VERSION="1_1_0"
 ARG BASE_URL="http://ftb.cursecdn.com/FTB2/modpacks/${MODPACK}"
 ARG SERVER_FILE="${MODPACK}Server.zip"
 
