@@ -1,10 +1,10 @@
 # Copyright 2015-2019 Sean Nelson <audiohacked@gmail.com>
-FROM openjdk:8-jre-alpine
-MAINTAINER Sean Nelson <audiohacked@gmail.com>
+FROM audiohacked/ftb_base:latest
+LABEL maintainer="audiohacked@gmail.com"
 
 ARG MODPACK="FTBAcademy"
 ARG FTB_VERSION="1_1_0"
-ARG BASE_URL="http://ftb.forgecdn.net/FTB2/modpacks/${MODPACK}"
+ARG BASE_URL="https://ftb.forgecdn.net/FTB2/modpacks/${MODPACK}"
 ARG SERVER_FILE="${MODPACK}Server.zip"
 
 WORKDIR /minecraft
